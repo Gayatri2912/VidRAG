@@ -20,77 +20,6 @@ A powerful Retrieval-Augmented Generation (RAG) application that enables intelli
 - **APIs**: OpenAI, YouTube Transcript API
 - **Processing**: Natural Language Processing, Text Embeddings
 
-## 📋 Prerequisites
-
-- Python 3.8+
-- OpenAI API key
-- Internet connection for YouTube access
-
-## 🔧 Installation
-
-1. **Clone the repository**
-```bash
-git clone <your-repo-url>
-cd Vidrag
-```
-
-2. **Create virtual environment**
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Linux/Mac
-source venv/bin/activate
-```
-
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Set up environment variables**
-Create a `.env` file in the root directory:
-```env
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-## 🚀 Usage
-
-1. **Run the Streamlit app**
-```bash
-streamlit run app.py
-```
-
-2. **Open your browser**
-Navigate to `http://localhost:8501`
-
-3. **Start asking questions**
-- Enter a YouTube URL
-- Wait for processing
-- Ask questions about the video content
-- Get AI-powered answers with sources
-
-## 📁 Project Structure
-
-```
-Vidrag/
-├── app.py                      # Main Streamlit application
-├── src/
-│   ├── __init__.py
-│   ├── youtube_processor.py   # YouTube transcript extraction
-│   ├── text_processor.py      # Text chunking and preprocessing
-│   ├── embeddings.py           # Embedding generation
-│   ├── vector_store.py         # Vector database management
-│   └── rag_pipeline.py         # RAG implementation
-├── config/
-│   └── config.py               # Configuration settings
-├── utils/
-│   ├── __init__.py
-│   └── helpers.py              # Utility functions
-├── requirements.txt            # Python dependencies
-├── .env.example               # Environment variables template
-└── README.md                   # Project documentation
-```
 
 ## 🎯 How It Works
 
@@ -124,13 +53,9 @@ Vidrag/
 - Average processing time: 30-60 seconds
 - Query response time: 2-5 seconds
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
-
-MIT License
+ MIT License
 
 ## 🙏 Acknowledgments
 
@@ -138,11 +63,7 @@ MIT License
 - LangChain for RAG framework
 - Streamlit for UI framework
 - ChromaDB and FAISS for vector storage
+<img width="1912" height="881" alt="Screenshot 2026-02-26 003617" src="https://github.com/user-attachments/assets/0345dc20-8137-4f8d-86fb-17678d909caf" />
+<img width="1919" height="852" alt="Screenshot 2026-02-26 003626" src="https://github.com/user-attachments/assets/dd99e5c6-a84e-4646-ac5a-ca736e2b78fd" />
+<img width="1917" height="893" alt="Screenshot 2026-02-26 003656" src="https://github.com/user-attachments/assets/e1c7032d-eef6-44e1-baef-1d261796f937" />
 
-## 📞 Contact
-
-For questions or support, please open an issue on GitHub.
-
----
-
-**Built with ❤️ using RAG, LangChain, and OpenAI**
